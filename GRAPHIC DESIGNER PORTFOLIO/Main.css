@@ -1,0 +1,255 @@
+body {
+    font-family: 'Courier New', Courier, monospace;  
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background: #fff;
+    overflow-x: hidden;
+}
+.header {
+    display: flex;
+    padding: 20px;
+    height: 100vh;
+}
+header .hero-intro{
+    flex: 2;
+    text-align: left;
+    line-height: .7;
+}
+header .hero-intro .year{
+    font-size: 1.5rem;
+    
+}
+header .hero-intro  h1{
+    color:rgb(3, 173, 173);
+    font-size: 5.5rem;
+}
+header .hero-intro  h1 i{
+    color: rgb(3, 173, 173);
+    font-size: 3.5rem;
+}
+header .hero-intro img{
+    animation: slideInFromLeft 2s ease forwards;
+    height: 50vh;
+    width: 62vw;
+}
+header .intro{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10%;
+}
+header .intro h2 {
+    font-size: 1.5rem;
+    color: rgb(3, 173, 173);
+    align-self: flex-start;
+}
+header .intro p {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+
+.about-me .sect-content1{
+    flex: 2;
+    line-height: .2;
+    padding: 3%;
+}
+.about-me .sect-content1 p{
+    font-size: 1.2rem;
+}
+.about-me .sect-content1 h2{
+    font-size: 3rem;
+    color: rgb(3, 173, 173);
+}
+.about-me .sect-content1 img{
+    animation: slideInFromLeft 1s ease forwards;
+    height: 70vh;
+    width: 57vw;
+}
+.about-me .sect-content2{
+    flex: 1;
+    padding: 3% 3% 3% 0;
+}
+.about-me .sect-content2 img{
+    height: 50vh;
+    width: 30vw;
+    margin-top: 4vh;
+    animation: slideInFromLeft 2s ease forwards;
+    /*animation-delay: 1s;*/
+}
+
+.passion{
+    flex-direction: column;
+}
+.passion .passion-pics{
+    height: 60vh;
+    display: flex;
+}
+.passion .passion-pics img{
+    height: 60vh;
+    display: block;
+}
+.passion .passion-pics #pic1{
+    width: 65vw;
+}
+.passion .passion-pics #pic2{
+    width: 35vw;
+}
+.passion .passion-content p{
+    text-align: center;
+    padding: 4%;
+}
+
+.graphics{
+    width: 100vw;
+    flex-direction: column;
+    justify-content: center;
+}
+.graphics .upper-row, .graphics .lower-row{
+    display: flex;
+}
+.graphics .upper-row div, .graphics .lower-row div{
+    height: 45vh;
+    width: 24vw;
+}
+.graphics .upper-row div img, .graphics .lower-row div img{
+    height: 40vh;
+    width: 21vw;
+}
+
+.more-designs{
+    align-items: center;
+    justify-content: center;
+}
+.left-sect{
+    flex: 2;
+}
+.left-sect .upper-row, .left-sect .middle-row, .left-sect .lower-row{
+    height: 30vh;
+    display: flex;
+}
+.first-col, .second-col{
+    flex: 1;
+}
+.left-sect img{
+    height: 28vh;
+    width: 28vw;
+}
+.right-sec{
+    flex: 1;
+}
+.right-sec img{
+    height: 90vh;
+    width: 28vw;
+}
+
+.contact{
+    flex-direction: column;
+    justify-content: center;
+}
+.contact .header{
+    flex: 0.8;
+}
+.contact .header h2{
+    font-size: 4rem;
+    color: rgb(3, 173, 173);
+}
+.contact .lower-row{
+    flex: 1.5;
+    display: flex;
+    
+}
+.contact .lower-row .picture{
+    flex: 2;
+}
+.contact .lower-row .picture img{
+    height: 60vh;
+}
+
+footer {
+    background: rgb(3, 173, 173);
+    color: #fff;
+    text-align: center;
+    padding: 8px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media only screen and (min-width: 1870px) {
+    header .hero-intro .year{
+        font-size: 2rem;   
+    }
+    header .hero-intro  h1{
+        font-size: 6.5rem;
+    }
+    header .hero-intro  h1 i{
+        font-size: 4.5rem;
+    }
+    header .hero-intro img{
+        height: 62vh;
+    }
+    header .intro h2 {
+        font-size: 2.5rem;
+    }
+    header .intro p {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    .about-me .sect-content1 p{
+        font-size: 2rem;
+    }
+    .about-me .sect-content1 h2{
+        font-size: 4rem;
+    }
+    .about-me .sect-content2 p{
+        font-size: 1.4rem;
+    }
+
+    .passion .passion-pics, .passion .passion-pics img{
+        height: 64vh; 
+    }
+    .passion .passion-content p{
+        font-size: 1.2rem;
+        padding-top: 2%;
+    }
+    
+
+    .Graphics-content h2{
+        font-size: 2rem;
+    }
+    .Graphics-content p{
+        font-size: 1.4rem;
+    }
+
+    .contact .header h2{
+        font-size: 5rem;
+    }
+   
+    .contact .lower-row .picture img{
+        height: 68vh;
+        width: 68vw;
+    }
+    .contact .contact-info h4{
+        font-size: 1.5rem;
+    }
+    .contact .contact-info p{
+        font-size: 1.2rem;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
