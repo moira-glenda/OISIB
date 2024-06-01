@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.hero-container{
+    background: #95e6fa;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 10px;
+    padding: 3%;
+}
+input[type="text"], select{
+    border: none;
+    border-bottom: 1px solid #000; 
+    outline: none;
+    background-color: transparent; 
+    padding: 5px; 
+}
+.hero-container h2{
+    text-align: center;
+    padding: 5%;
+}
+.hero-container .text-field, .hero-container .select-FromUnit{
+    padding-bottom: 8%;
+}
+.hero-container label{
+    font-size: 18px;
+    color: #3d3c3c;
+}
+.hero-container .text-field input{
+    font-size: 20px;
+    width: 150px;
+}
+.hero-container .Select-Unit{
+    display: flex;
+}
+.selects{
+    display: flex;
+    flex-direction: column;
+}
+.hero-container .Select-Unit .select-FromUnit{
+    margin-right: 26%;  
+}
+.selects select, .hero-container .results p, .results #result{
+    font-size: 20px;
+}
+.results #result{
+    text-align: left;
+    margin-left: -20px;
+}
+.Covert-btn button{
+    height: 35px;
+    width: 30vw;
+    background-color: rgb(3, 92, 92);
+    border: 2px solid rgb(3, 92, 92);
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 1870px) {
+    .hero-container{
+        height: 50vh;
+        width: 25vw;
+    }
+    .Covert-btn button{
+        height: 35px;
+        width: 25vw;
+    }
+}
+@media only screen and (max-width: 1250px){
+    .hero-container .Select-Unit{
+        display: flex;
+        flex-direction: column;
+    }
+}

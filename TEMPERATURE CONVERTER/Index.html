@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperaturer Coverter</title>
+    <link rel="stylesheet" href="Main.css">
+</head>
+<body>
+    <div class="hero-container">
+        <h2 class="hero-title">Temperaturer Coverter</h2>
+        <div class="text-field" id="text-field">
+            <label for="Temperaturer">
+                Temperaturer
+            </label>
+            <input type="text" id="Temperaturer" name="Temperaturer" required>
+        </div>
+        <div class="Select-Unit">
+            <div class="selects select-FromUnit">
+                <label for="From-Unit">
+                    Covert From
+                </label>
+                <br>
+                <select name="From-Unit" id="From-Unit">
+                    <option value="Celsius">
+                        Celsius
+                    </option>
+                    <option value="Fahrenheit">
+                        Fahrenheit
+                    </option><option value="Kelvin">
+                        Kelvin
+                    </option>
+                </select>
+            </div>
+            <div class="selects select-ToUnit">
+                <label for="To-Unit">
+                    Covert To
+                </label>
+                <br>
+                <select name="To-Unit" id="To-Unit">
+                    <option value="Celsius">
+                        Celsius
+                    </option>
+                    <option value="Fahrenheit">
+                        Fahrenheit
+                    </option><option value="Kelvin">
+                        Kelvin
+                    </option>
+                </select>
+            </div>
+        </div>
+        <br>
+        <div class="results">
+            <p>Result</p>
+            <h2 id="result"></h2>
+        </div>
+        <div class="Covert-btn">
+            <button type="button" onclick="ConvertTemp()">
+                CONVERT
+            </button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
